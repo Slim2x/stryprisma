@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <div className="henteEnVerdi">
+        <h1>Hente ut en verdi</h1>
+        <form action="/fetch" method="post">
+        <label for="html">Skriv inn primærnøkkel</label>
+          <input type="text" name="pk" id="pk" />
+          <input type="submit" value="Hent" />
+        </form>
+      </div>
+      <div class="henteAlt">
+        <h1>Hente ut hele tabellen</h1>
+        <form action="/heleTabell" method="get">
+            <input type="submit" value="Hent fra tabellen">
+        </form>
+    </div>
+    <div class="sletteEnRad">
+        <h1>Slette en rad fra tabellen</h1>
+        <form action="/sletteEnRad" method="post">
+            <label for="html">Skriv inn primærnøkkel</label>
+            <input type="text" name="pk" id="pk">
+            <input type="submit" value="Slett">
+        </form>
+    </div>
+    <div class="leggeinn">
+        <h1>Legge inn rad</h1>
+        <form action="/submit" method="post">
+            <label for="UtleietjenesteNr">UtleietjenesteNr</label>
+            <input type="number" name="UtleietjenesteNr" id="UtleietjenesteNr">
+
+            <label for="Tjenestenavn">Tjenestenavn</label>
+            <input type="text" name="Tjenestenavn" id="Tjenestenavn">
+
+            <label for="DagerTilgj">DagerTilgj</label>
+            <input type="text" name="DagerTilgj" id="DagerTilgj">
+
+            <label for="TilgjTid">TilgjTid</label>
+            <input type="text" name="TilgjTid" id="TilgjTid">
+
+            <label for="Pris">Pris</label>
+            <input type="number" name="Pris" id="Pris">
+            <input type="submit" value="Legg inn">
+        </form>
+    </div>
+    
+</body>
+</html>

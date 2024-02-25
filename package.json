@@ -1,0 +1,25 @@
+{
+    "name": "demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "next build",
+        "start": "next start",
+        "dev": "nodemon prisma/app.js",
+        "lint": "next lint",
+        "custom-dev": "node prisma/app.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@prisma/client": "^5.10.2",
+        "express": "^4.17.1",
+        "mysql2": "^3.9.1",
+        "nodemon": "^2.0.12"
+    },
+    "devDependencies": {
+        "prisma": "^5.10.2"
+    }
+}
